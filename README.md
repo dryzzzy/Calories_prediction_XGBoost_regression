@@ -1,6 +1,33 @@
-# XGBoost Regressor for Calorie Prediction
+# XGBoost Regressor for Calories Prediction
 
 This project builds a robust XGBoost model to predict calories burned based on various features such as age, weight, heart rate, and body temperature.
+
+### Model Evaluation Summary:
+### Conclusion:
+
+The model shows excellent performance with very low error rates (MAE, MSE, RMSE) and a high R² score for both training and test data, indicating that it generalizes well and can make accurate predictions. The small difference between training and test metrics suggests there is no significant overfitting, which is a positive sign for the model's robustness.
+
+- **Mean Absolute Error (MAE)**:  
+  - **Training MAE**: 7.52  
+  - **Test MAE**: 8.06  
+  - **Interpretation**: On average, the model's predictions are off by around 7.52 units on the training data and 8.06 units on the test data. The error is relatively low, indicating good accuracy.
+
+- **Mean Squared Error (MSE)**:  
+  - **Training MSE**: 103.96  
+  - **Test MSE**: 120.32  
+  - **Interpretation**: MSE measures the average squared difference between predicted and actual values. The lower the MSE, the better. The model performs slightly worse on the test data, but both training and test MSEs are reasonably low.
+
+- **Root Mean Squared Error (RMSE)**:  
+  - **Training RMSE**: 10.20  
+  - **Test RMSE**: 10.97  
+  - **Interpretation**: RMSE gives us a sense of the average magnitude of error in the same units as the target variable. The training error is 10.20, and the test error is 10.97, which is still a fairly good fit for the data.
+
+- **R-squared (R²)**:  
+  - **Training R²**: 0.97  
+  - **Test R²**: 0.97  
+  - **Interpretation**: R² measures the proportion of variance explained by the model. A value of 0.97 means the model explains 97% of the variance in both training and test data, indicating that the model is very good at making predictions.
+
+---
 
 ## Key Steps:
 
